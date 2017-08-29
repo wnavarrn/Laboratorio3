@@ -9,8 +9,33 @@
 <body>
     <!--el servidor va a buscar el name-->
     <form id="miForm" type="" action="" method="">
-        <input type="text" name="nombre" id="nombre">
-        <label for="nombre"></label>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Ingrese Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre">
+            <br>
+            <br>
+            <label for="apellido">Ingrese Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido">
+            <hr>
+            <label for="genero">Genero</label>
+            <input type="radio" name="genero" id="genero" value="1" checked>
+            <input type="radio" name="genero" value="0">
+            <hr>
+            <label for="select">Opciones</label>
+            <select name="select">
+                <optgroup label="group1">
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>    
+                </optgroup>
+               <optgroup label="group2">
+                    <option value="1_1">Opción 1</option>
+                    <option value="2_2">Opción 2</option>
+                    <option value="3_2">Opción 3</option>    
+                </optgroup>
+            </select>
+        </fieldset>
     </form>
 </body>
 
