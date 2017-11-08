@@ -22,13 +22,13 @@ function llamarBatman(llamar:boolean=true):string{
 llamarBatman();
 
 // Rest?
-function unirheroes( ...personas:string[] ){
+function unirheroes( ...personas:string[] ):string{
   return personas.join(", ");
 }
 
 
 // Tipo funcion
-function noHaceNada( numero, texto, booleano, arreglo ){
+function noHaceNada( numero:number, texto:string, booleano:boolean, arreglo:any[] ){
 }
 
 // Crear el tipo de funcion que acepte la funcion "noHaceNada"

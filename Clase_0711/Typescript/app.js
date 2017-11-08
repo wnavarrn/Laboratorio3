@@ -1,2 +1,2 @@
 "use strict";
-var cadena = 123;
+var cadena = 'walter';

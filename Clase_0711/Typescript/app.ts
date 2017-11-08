@@ -1,1 +1,1 @@
-let cadena:string = 123
+let cadena:string = 'walter'
