@@ -44,11 +44,11 @@ soluciones.usuariosMayores = function(usuarios, edad){
     })
     .map(function(user){
         
-        return{
-            nombre: user.nombre,
-            email: user.email,
-            edad: user.edad
-        }
+        x ={}
+        x.nombre= user.nombre,
+        x.email= user.email,
+        x.edad= user.edad
+        return x;
 
     });
 }
