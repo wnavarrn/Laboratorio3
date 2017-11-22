@@ -18,5 +18,7 @@ function agregarMascota() {
     var mascotaString = localStorage.getItem("Mascotas");
     //Controlo que no sea vacio para convertir a JSON
     var MascotaJSON = mascotaString == null ? [] : JSON.parse(mascotaString);
+
+    
     console.log(nuevaMascota.toJSON());
 }

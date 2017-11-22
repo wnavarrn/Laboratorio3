@@ -6,7 +6,7 @@ namespace clases{
         public tipo:tipoMascota;
 
         public constructor(id:number,tipo:tipoMascota, nombre:string, edad:number, patas:number) {
-            super(nombre, edad, patas);
+            super(nombre, edad, patas, );
             this.id = id;
             this.tipo = tipo;
         }
@@ -15,7 +15,7 @@ namespace clases{
         {
             let cad:string = super.toJSON().replace("}","");
 
-            let json: string = cad + `,"id":"${this.id}","Edad":"${this.edad}"}`;
+            let json: string = cad + `,"id":"${this.id}","tipo":"${this.tipo}"}`;
 
             return json;
             

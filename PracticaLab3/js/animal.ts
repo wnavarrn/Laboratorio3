@@ -2,10 +2,10 @@ namespace clases{
     
     export abstract class Animal {
 
-        nombre:string;
-        edad:number;
-        patas:number;
-
+        public nombre:string;
+        public edad:number;
+        public patas:number;
+        
         constructor(nombre:string,edad:number,patas:number) {
             this.nombre = nombre;
             this.edad = edad;
@@ -13,7 +13,7 @@ namespace clases{
         }
 
         public toJSON():string{
-            let json: string = `{"Nombre":"${this.nombre}","Edad":"${this.edad}","patas":"${this.patas}"`;
+            let json: string = `{"nombre":"${this.nombre}","edad":"${this.edad}","patas":"${this.patas}"`;
             return json;
         }
     }

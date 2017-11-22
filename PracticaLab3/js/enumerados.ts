@@ -1,7 +1,7 @@
 namespace clases{
 
     export enum tipoMascota{
-        perro,
+        perro = 1,
         gato,
         reptil,
         roedor,

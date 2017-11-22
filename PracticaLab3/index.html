@@ -12,54 +12,83 @@
     <script src="js/out.js"></script>
 </head>
 
+
 <body>
     <div class="container">
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="txtId">Id</label>
-                    <input type="text" class="form-control" id="txtId" placeholder="Id">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="txtNombre">Nombre</label>
-                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
-                </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="txtId">Id</label>
+                <input type="text" class="form-control" id="txtId" placeholder="Id">
+                <label class="form-check-label">
+                    <input type="checkbox" id="chkid" class="form-check-input">
+                </label>
             </div>
+            <div class="form-group">
+                <label for="txtNombre">Nombre</label>
+                <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
+                <label class="form-check-label">
+                    <input type="checkbox" id="chkNombre" class="form-check-input">
+                </label>
+            </div>
+
             <div class="form-group">
                 <label for="inputAddress">Edad</label>
                 <input type="txtEdad" class="form-control" id="txtEdad" placeholder="Edad">
+                <label class="form-check-label">
+                    <input type="checkbox" id="chkEdad" class="form-check-input">
+                </label>
             </div>
-           
-   
-                <div class="form-group">
-                    <label for="ddlTipo">Tipo</label>
-                    <select id="ddlTipo" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">Perro</option>
-                        <option value="2">Gato</option>
-                        <option value="3">Reptil</option>
-                        <option value="4">roedor</option>
-                        <option value="5">ave</option>
-                        <option value="6">pez</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="ddlCantPatas">Cantidad de patas</label>
-                    <select id="ddlCantPatas" class="form-control">
-                        <option selected>Choose...</option>
-                        <option value="1">2</option>
-                        <option value="2">4</option>   
-                    </select>
-                </div>
+
+
+            <div class="form-group">
+                <label for="ddlTipo">Tipo</label>
+                <select id="ddlTipo" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="1">Perro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Reptil</option>
+                    <option value="4">roedor</option>
+                    <option value="5">ave</option>
+                    <option value="6">pez</option>
+                </select>
             </div>
-            <button id="btnAgregar"  type="button" class="btn btn-success">Agregar Mascota</button>
-            <button type="button" class="btn btn-success">Modficar Mascota</button>
-            <button type="button" class="btn btn-success">Eliminar Mascota</button>
-        </form>
-        <hr>
-        <h3>Mascotas</h1>
-        <div id="myTable">
+            <div class="form-group">
+                <label for="ddlCantPatas">Cantidad de patas</label>
+                <select id="ddlCantPatas" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="1">2</option>
+                    <option value="2">4</option>
+                </select>
+                <label class="form-check-label">
+                    <input type="checkbox" id="chkCantPatas" class="form-check-input">
+                </label>
+            </div>
         </div>
+
+        <button id="btnAgregar" type="button" class="btn btn-success" onclick="agregarMascota()">Agregar Mascota</button>
+        <button type="button" class="btn btn-success">Modficar Mascota</button>
+        <button type="button" class="btn btn-success">Eliminar Mascota</button>
+
+
+        <hr>
+        <div class="form-group">
+            <label for="ddlFilterTipo">Filtro</label>
+            <select id="ddlFilterTipo" class="form-control">
+                <option selected>Choose...</option>
+                <option value="1">Perro</option>
+                <option value="2">Gato</option>
+                <option value="3">Reptil</option>
+                <option value="4">roedor</option>
+                <option value="5">ave</option>
+                <option value="6">pez</option>
+            </select>
+        </div>
+        <h3>Mascotas</h1>
+            <div id="grpChkBox">
+                <p><input type="checkbox" name="id" /> ID</p>
+                <p><input type="checkbox" name="name" /> Name</p>
+            </div>
+            <div id="myTable"></div>
     </div>
 </body>
 
