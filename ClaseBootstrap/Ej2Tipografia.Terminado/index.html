@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Bootstrap -Tipografia y Textos-</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1 class="text-muted">Este es un header H1
+            <small>Texto secundario</small>
+        </h1>
+        <h2 class="text-primary">Este es un header H2
+            <small>Texto secundario</small>
+        </h2>
+        <h3 class="text-success">Este es un header H3
+            <small>Texto secundario</small>
+        </h3>
+        <h4 class="text-info">Este es un header H1
+            <small>Texto secundario</small>
+        </h4>
+        <h5 class="text-warning">Este es un header H1
+            <small>Texto secundario</small>
+        </h5>
+        <h6 class="text-danger">Este es un header H1
+            <small>Texto secundario</small>
+        </h6>
+        <br>
+        <!-- <small>Texto secundario</small> -->
+       
+        <br>
+
+
+
+        <div class="row">
+            <div class="col-md-4 text-left">
+                <!-- .lead Destaca parrafos -->
+                <p class="lead">Vivamus pulvinar imperdiet tristique. Aenean nisi mauris, rhoncus eu libero laoreet, suscipit finibus magna.</p>
+                <!-- mark tambien destaca -->
+                <p class="">
+                    <mark>nec turpis vulputate, imperdiet erat nec, porta dui. Duis mattis vitae sem id tristique. Aenean ultrices</mark>
+                </p>
+                <!-- del indica que el texto ha sido borrado (deleted) -->
+                <p class="">
+                    <del>fermentum. Suspendisse ut accumsan libero, vel sollicitudin tortor. Duis aliquam libero sit amet</del>
+                </p>
+                <!-- s indica que el texto esta tachado -->
+                <p class="">
+                    <s>pulvinar molestie. Integer consequat lectus lacus, quis porta nulla porttitor sit amet. Class aptent</s>
+                </p>
+                <!-- ins Subraya texto para indicar que ha sido insertado-->
+                <p class="">
+                    <ins>taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut lobortis leo ac sem
+                        interdum</ins>
+                </p>
+                <!-- ins Subraya texto-->
+                <p class="">
+                    <u>eget efficitur erat hendrerit. In vitae ante sit amet libero vulputate vulputate ut eu urna. Vivamus
+                        porttitor</u>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <!-- small tambien puede usarse como clase -->
+                <p class="small">Vivamus pulvinar imperdiet tristique. Aenean nisi mauris, rhoncus eu libero laoreet, suscipit finibus magna.</p>
+                <!-- text-lowercase transforma el texto en minusculas -->
+                <p class="text-lowercase">Mauris nec turpis vulputate, imperdiet erat nec, porta dui. Duis mattis vitae sem id tristique. Aenean ultrices</p>
+                <!-- text-uppercase transforma el texto en mayusculas -->
+                <p class="text-uppercase">rhoncus fermentum. Suspendisse ut accumsan libero, vel sollicitudin tortor. Duis aliquam libero sit amet</p>
+                <!-- text-capitalize pasa a mayusculas la inicial de cada palabra -->
+                <p class="text-capitalize">erat pulvinar molestie. Integer consequat lectus lacus, quis porta nulla porttitor sit amet. Class aptent</p>
+                <p class="bg-info">taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut lobortis leo ac sem interdum</p>
+                <p class="">eget efficitur erat hendrerit. In vitae ante sit amet libero vulputate vulputate ut eu urna. Vivamus porttitor</p>
+                <p class="">Pellentesque diam urna, lobortis non pulvinar eu, hendrerit eu velit. Quisque quis sapien convallis, luctus
+                    felis</p>
+            </div>
+            <div class="col-md-4 text-right">
+                <!-- code especifica que es una linea de codigo -->
+                <p class="">
+                    <code>pulvinar imperdiet tristique. Aenean nisi mauris, rhoncus eu libero laoreet, suscipit finibus magna.</code>
+                </p>
+                <!-- pre especifica que se trata de un bloque de codigo -->
+                <p class="">
+                    <pre>Mauris nec turpis vulputate, imperdiet erat nec, porta dui. Duis mattis vitae</pre>
+                </p>
+                <p class="">rhoncus fermentum. Suspendisse ut accumsan libero, vel sollicitudin tortor. Duis aliquam libero sit amet</p>
+                <p class="">erat pulvinar molestie. Integer consequat lectus lacus, quis porta nulla porttitor sit amet. Class aptent</p>
+                <p class="">taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut lobortis leo ac sem interdum</p>
+                <p class="">eget efficitur erat hendrerit. In vitae ante sit amet libero vulputate vulputate ut eu urna. Vivamus porttitor</p>
+                <p class="">Pellentesque diam urna, lobortis non pulvinar eu, hendrerit eu velit. Quisque quis sapien convallis, luctus
+                    felis</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!-- blockquote sirve para citar frases -->
+            <blockquote class="blockquote-reverse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis id mi eget vestibulum. Integer
+                    eu lorem neque. Nam malesuada volutpat justo, eget mollis mauris vehicula eget. Nulla non mauris at dui
+                    ornare porta. Maecenas a eleifend augue, sit amet efficitur magna. Praesent a risus sapien. Vestibulum
+                    tempus in elit at bibendum. </p>
+                <!-- Este footer sirve para colocar al pie de la cita la fuente -->
+                <footer>Albert Einstein
+                    <cite title="fuente">La Nación</cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+</html>

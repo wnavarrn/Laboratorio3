@@ -1,0 +1,22 @@
+segundo parcial
+
+local
+json
+
+localstorage get item set item
+trabajar con json
+hacer un abm
+
+map 
+filter
+reduce
+
+apuntar 
+
+tabla con checkbox -> map
+personas que tenga pais de origen, combo con paises mostrar en la lista de argentina -> filet
+reduce -> consulta que devuelve un numero
+
+en vez de ajax, me traigo todo y lo trabajo local
+
+pagina https://www.mockaroo.com/
