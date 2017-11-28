@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica Seg Parcial</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="conteiner-fluid">
+                <div class="col-xs-4 col-sm-4" style="background-color:lavender;">
+                    <input type="hidden" id="indexModificar">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="text" id="nombre" name="nombre" placeholder="nombre" />
+                            <input class="ch" type="checkbox" name="checkGroup[]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="text" id="apellido" name="apellido" placeholder="apellido" />
+                            <input class="ch" type="checkbox" name="checkGroup[]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="text" id="edad" name="edad" placeholder="Edad" />
+                            <input class="ch" type="checkbox" name="checkGroup[]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="text" id="legajo" name="legajo" placeholder="Legajo" />
+                            <input class="ch" type="checkbox" name="checkGroup[]" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Horario</label>
+                        <div class="col-md-4">
+                            <select id="horario" name="horario">
+                                <option value="Mañana">Mañana</option>
+                                <option value="Tarde">Tarde</option>
+                                <option value="Noche">Noche</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="button" value="Agregar" class="btn btn-primary" onclick="Controladora.AgregarEmpleado()" />
+                            <input type="button" value="Mostrar" class="btn btn-primary" onclick="main.mostrar()" />
+                            <input type="button" value="Filtrar por Horario" class="btn btn-default" onclick="main.filtrar()" />
+                            <input type="button" value="Promedio Por Horario" class="btn btn-default" onclick="main.promedioHorario()" />
+                            <div id="promedio">
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8" style="background-color:lavenderblush;">
+                    <div id="divTabla">
+                        tabla aqui...
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- cierre Container -->
+</body>
+
+</html>

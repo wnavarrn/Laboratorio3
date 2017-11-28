@@ -1,0 +1,6 @@
+
+1) tsc --init esto crea el tsconfig
+2) creo el archivo app.ts
+3) tsc app -> para que se haga el js
+4) tsc --watch -> para que transpile
+5) comienzo a crear las clases con los namesspace

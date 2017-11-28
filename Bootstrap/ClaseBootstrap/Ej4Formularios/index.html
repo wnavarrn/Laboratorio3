@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Bootstrap -Formulario Básico-</title>
+</head>
+
+<div class="container">
+
+    <body>
+        <!-- controles soportados por Bootstrap (form-control)
+         text
+         password
+         datetime
+         datetime-local
+         date
+         month
+         time
+         week
+         number
+         email
+         url
+         search
+         tel
+         color -->
+
+        <form action="#">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="time" class="form-control week" id="nombre" placeholder="Nombre">
+            </div>
+
+            <div>
+                <label for="opcion">Elige una opción:</label>
+                <select class="form-control" name="" id="opcion">
+                    <option value="">Opción #1</option>
+                    <option value="">Opción #2</option>
+                    <option value="">Opción #3</option>
+                    <option value="">Opción #4</option>
+                    <option value="">Opción #5</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" name="" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+            </div>
+
+            <div>
+                <label for="archivo">Archivo:</label>
+                <input type="file" id="archivo">
+            </div>
+            <p class="help-block">Máximo 50MB</p>
+
+            <button class="btn btn-primary">Enviar</button>
+
+        </form>
+    </body>
+
+</div>
+
+</html>

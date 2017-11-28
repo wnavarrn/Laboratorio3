@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+
+    <script src="Persona.js" ></script>
+    <script src="Empleado.js" ></script>
+    <script src="Manejadora.js" ></script>
+
+
+  </body>
+
+  </head>
+ <body>
+        <div class="container">
+          <br>
+          <div class="row responsive-utilities-test visible-on">
+           <div class="col-xs-4 col-sm-4" style="background-color:grey;"> 
+
+                 <div class="form-group">
+                              <label class="col-md-2 control-label">Nombre</label>
+                              <div class="col-md-10">
+                                 <input type="text" id="txtNombre" />
+                              </div>
+                           </div> 
+                      <div class="form-group">
+                              <label class="col-md-2 control-label">Apellido</label>
+                              <div class="col-md-10">
+                                 <input type="text" id="txtApellido" />
+                              </div>
+                           </div>
+                     <div class="form-group">
+                              <label class="col-md-2 control-label">Edad</label>
+                              <div class="col-md-10">
+                                 <input type="text" id="txtEdad" />
+                              </div>
+                           </div> 
+                 <div class="form-group">
+                              <label class="col-md-2 control-label">Legajo</label>
+                              <div class="col-md-10">
+                                 <input type="text" id="txtLegajo" />
+                              </div>
+                           </div>
+                            <div class="form-group">
+                      <div class="form-group">
+                              <label class="col-md-2 control-label">Horario</label>
+                              <div class="col-md-10">
+                                <select id="selHorario" class="">
+                                  <option>Mañana</option>
+                                  <option>Tarde</option>
+                                  <option>Noche</option>
+                                </select>
+                              </div>
+                            </div> 
+                                     
+
+                   
+                        <div class="form-group">
+                              <div class="col-md-12">
+                                <input type="button" value="Agregar" class="btn btn-primary" onclick="Clases.Manejadora.agregarEmpleado()"/>
+                                <input type="button" value="Modificar" class="btn btn-primary" onclick="Clases.Manejadora.modificar()"/>
+                                <input type="button" value="Listar" class="btn btn-default" onclick="Clases.Manejadora.mostrarEmpleado()"/>
+                                <input type="button" value="Filtrar por Horario" id="btnFiltro"  onclick="Clases.Manejadora.filtrarPorHorario()"/>
+                                 <input type="button" value="promedioEdadPorHorario" id="idPromedio"  onclick="Clases.Manejadora.promedioEdadPorHorario()"/>
+                              </div>
+                            </div>
+                  
+  
+           </div>  
+
+
+         
+             <div class="col-xs-8 col-sm-8">
+                  <div id="divTabla">
+                   
+                  </div>
+            </div>  
+             <div class="col-xs-4 col-sm-4">
+                  <div id="divPromedio">
+                      
+                  </div>
+            </div>      
+           
+
+  
+        </div>  
+
+
+ <input type="hidden" id="hdnIdEmpleado" > 
+  </div>  
+
+ </body>
+ </html>
+
+  <body>
+

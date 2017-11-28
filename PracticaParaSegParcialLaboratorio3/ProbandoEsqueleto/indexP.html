@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica Seg Parcial</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+</head>
+
+
+<body>
+    <input type="hidden" id="indexModificar">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="form-inline">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="txtId">Legajo</label>
+                        <input type="text" class="form-control" id="txtLegajo" placeholder="Legajo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtNombre">Nombre</label>
+                        <input type="text" class="form-control" id="txtNombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtNombre">Apellido</label>
+                        <input type="text" class="form-control" id="txtApellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEdad">Edad</label>
+                        <input type="text" class="form-control" id="txtEdad" placeholder="Edad">
+                    </div>
+                    <div class="form-group">
+                        <label for="ddlHorario">Tipo</label>
+                        <select name="" id="ddlHorario" class="form-control">
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <button id="btnAgregar" type="button" class="btn btn-success btn-block" onclick="agregarPersona()">Agregar Persona</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="ddlFilterHorario">Tipo</label>
+                        <select name="" id="ddlFilterHorario" class="form-control">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="txtPromEdad">Promedio Edad</label>
+                        <input type="text" class="form-control" id="txtPromEdad" placeholder="Promedio de edad" readonly>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 class="page-header">Tabla de Empleados</h1>
+                <div id="grpChkBox">
+                    <label class="checkbox-inline"></label>
+                    <input type="checkbox" name="legajo" /> Legajo
+                    </label>
+                    <label class="checkbox-inline"></label>
+                    <input type="checkbox" name="nombre" /> Nombre
+                    </label>
+                    <label class="checkbox-inline"></label>
+                    <input type="checkbox" name="apellido" /> Apellido
+                    </label>
+                    <label class="checkbox-inline"></label>
+                    <input type="checkbox" name="edad" /> Edad
+                    </label>
+                    <label class="checkbox-inline"></label>
+                    <input type="checkbox" name="Horario" />Horario
+                    </label>
+                </div>
+                <div id="myTable"></div>
+        </div>
+    </div>
+</body>
+
+</html>
