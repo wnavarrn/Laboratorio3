@@ -1,0 +1,1 @@
+let cadena:string = 'walter'
