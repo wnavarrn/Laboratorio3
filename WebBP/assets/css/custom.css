@@ -1,0 +1,12 @@
+.my-footer{
+    background-color: #2770CA;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.font-white{
+  color: #ffffff !important;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Segundo Parcial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="Animal.js"></script>
+  <script src="Mascota.js"></script>
+  <script src="enum.js"></script>
+  <script src="controladora.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row responsive-utilities-test visible-on">
+      <div class="container-fluid">
+        <div class="col-xs-6 col-sm-6 col-md-6" style="background-color:cornflowerblue;">
+          <input type="hidden" id="indexModificar">
+          <h2>Ingrese los datos de la mascota</h2>
+          <br>
+          <div class="form-group">
+            <div class="col-md-6">
+              <input type="text" id="ID" placeholder="ID" /><input type="checkbox" class="chID" onchange="Controladora.FiltroColID()"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <input type="text" id="Nombre" placeholder="Nombre" /><input type="checkbox" class="chNombre" onchange="Controladora.FiltroColNombre()" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <input type="text" id="Edad" placeholder="Edad" /><input type="checkbox" class="chEdad" onchange="Controladora.FiltroColEdad()" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+              <input type="text" id="CantidadPatas" placeholder="CantidadPatas" /><input type="checkbox" class="chCantidadPatas" onchange="Controladora.FiltroColCantidadPatas()" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-6 control-label">Tipo</label>
+            <div class="col-md-6">
+              <select name="Tipo" id="Tipo">
+
+
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <div class="col-md-6">
+              <input type="button" id="CargarMascota" value="Agregar" class="btn btn-primary" onclick="Controladora.AgregarMascota()">
+              <input type="button" value="Mostrar" id="MostrarMascota" class="btn btn-primary" onclick="Controladora.MostrarMascotas()">
+              <input type="button" value="Filtrar por Tipo" id="FiltrarPorTipo" class="btn btn-default" onclick="Controladora.FiltrarPorTipo()"><br>
+              <input type="button" value="Promedio de Patas" id="PromedioPatas" class="btn btn-default" onclick="Controladora.PromedioPatas()">
+              <div id="promedio"><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cierre de la columna-->
+
+         <!--Comienza la tabla-->
+        <div class="col-xs-6 col-sm-6 col-md-6" style="background-color:lavenderblush">
+          <div id="divTabla">
+         tabla aqui..
+          </div>
+        </div>
+    
+      </div>
+      <!--cierre del conteiner-fluid-->
+    </div>
+    <!--cierre del responsive-->
+
+  </div>
+  <!--cierre del conteiner-->
+
+</body>
+
+</html>
